@@ -18,7 +18,7 @@
                             <span class="h4"> Profile Information</span>
                                 
                             <hr>
-                            <form method="POST" enctype="multipart/form-data">
+                            <form method="POST" enctype="multipart/form-data">   
                                 {% csrf_token %}
                                 {{ user_form|crispy }}
                                 {{ profile_form|crispy }}
